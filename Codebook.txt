@@ -1,12 +1,58 @@
-General Info
-============
+General Information
+===================
 
-The variables contained in the data to be analyzed were obtained from the Human Activity Recognition Using Smartphones Dataset, as described below. 
-These variables and values are to be analyzed according to Coursera's Getting and Cleaning Data Peer Assessment, as explained in the README.txt file. 
-In brief, after the run_analysis.R program is run, the 2 study groups (test and trainning) are joined into a single set, and only the variables containing the mean or standard deviation are kept. 
-The final result is achieved by taking the mean of every variable selected in the last step, according to subject and activity (walking, walking downstairs, walking upstairs, sitting, standing and laying).
+The variables contained in the original data were obtained from the Human Activity Recognition Using Smartphones Dataset, as described in the "Original Features" section. These variables and values will be analyzed according to Coursera's Getting and Cleaning Data Peer Assessment, as decribed step by step in the README.txt file. In brief, after the run_analysis.R program is run, the 2 study groups (test and trainning) are joined into a single set, and only the variables containing the MEAN or STANDARD DEVIATION are kept. The final result is achieved by further taking the MEAN of every variable selected in the last step, according to subject and activity (walking, walking downstairs, walking upstairs, sitting, standing and laying).
 
-Feature Selection 
+Output Features - MEAN and STANDARD DEVIATION variables
+=======================================================
+
+After the run_analysis.R program is run, the features in the output file (Peer Assessment.txt) are only those containing the MEAN and STANDARD DEVIATION, as follows:
+
+tBodyAcc-XYZ-mean
+tGravityAcc-XYZ-mean
+tBodyAccJerk-XYZ-mean
+tBodyGyro-XYZ-mean
+tBodyGyroJerk-XYZ-mean
+tBodyAccMag-mean
+tGravityAccMag-mean
+tBodyAccJerkMag-mean
+tBodyGyroMag-mean
+tBodyGyroJerkMag-mean
+fBodyAcc-XYZ-mean
+fBodyAccJerk-XYZ-mean
+fBodyGyro-XYZ-mean
+fBodyAccMag-mean
+fBodyAccJerkMag-mean
+fBodyGyroMag-mean
+fBodyGyroJerkMag-mean
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+tBodyAcc-XYZ-std
+tGravityAcc-XYZ-std
+tBodyAccJerk-XYZ-std
+tBodyGyro-XYZ-std
+tBodyGyroJerk-XYZ-std
+tBodyAccMag-std
+tGravityAccMag-std
+tBodyAccJerkMag-std
+tBodyGyroMag-std
+tBodyGyroJerkMag-std
+fBodyAcc-XYZ-std
+fBodyAccJerk-XYZ-std
+fBodyGyro-XYZ-std
+fBodyAccMag-std
+fBodyAccJerkMag-std
+fBodyGyroMag-std
+fBodyGyroJerkMag-std
+
+Where XYZ denote three different axis variables (X, Y and Z). However, it's important to note that not all of these variables may be present in the output. The meaning of these variables are further described down below, as per the original description in the features.txt file.
+
+Original Features 
 =================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
