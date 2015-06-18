@@ -58,7 +58,10 @@ fBodyAccJerkMag-std
 fBodyGyroMag-std
 fBodyGyroJerkMag-std
 
-Where XYZ denote three different axis variables (X, Y and Z). However, it's important to note that not all of these variables may be present in the output. The meaning of these variables are further described down below, as per the original description in the features.txt file.
+Where XYZ denote three different axis variables (X, Y and Z). However, it's important to note 
+that not all of these variables may be present in the output. 
+The meaning of these variables are further described down below, as per the original description 
+in the features.txt file.
 
 Original Features 
 =================
