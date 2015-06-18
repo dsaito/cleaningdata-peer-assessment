@@ -1,7 +1,7 @@
 General Information
 ===================
 
-The variables contained in the original data were obtained from the Human Activity Recognition Using
+The variables in the original data were obtained from the Human Activity Recognition Using
 Smartphones Dataset, as described in the "Original Features" section. These variables and values
 will be analyzed according to Coursera's Getting and Cleaning Data Peer Assessment, as decribed step
 by step in the README.txt file. In brief, after the run_analysis.R program is run, the 2 study
@@ -10,11 +10,15 @@ or STANDARD DEVIATION are kept. The final result is achieved by further taking t
 variable selected in the last step, according to subject and activity (walking, walking downstairs,
 walking upstairs, sitting, standing and laying).
 
+To achieve these results, the dplyr R package was used to join datasets, to create groups of data, 
+calculate the mean, and summarize the results. These steps are fully documented inside the 
+run_analysis.R script itself in the form of comment lines, so you can follow along the analysis process, if you desire.
+
 Output Features - MEAN and STANDARD DEVIATION variables
 =======================================================
 
 After the run_analysis.R program is run, the features in the output file (Peer Assessment.txt) 
-are only those containing the MEAN and STANDARD DEVIATION, as follows:
+are only those containing the MEAN and STANDARD DEVIATION, as described below. XYZ denote three different axis variables (X, Y and Z), so for each of these variables, there will be a total of 3 in the dataset. However, it's important to note that not all of these variables may be present in the output. The units (and meaning) of each variable are described down below, in the "Original Features" section. In brief, variables preceeded by 'f' correspond to FREQUENCY measurements, whereas those preceeded by 't' are TIME measurements:
 
 tBodyAcc-XYZ-mean
 tGravityAcc-XYZ-mean
@@ -58,12 +62,7 @@ fBodyAccJerkMag-std
 fBodyGyroMag-std
 fBodyGyroJerkMag-std
 
-Where XYZ denote three different axis variables (X, Y and Z). However, it's important to note 
-that not all of these variables may be present in the output. 
-The meaning of these variables are further described down below, as per the original description 
-in the features.txt file.
-
-Original Features 
+Original Features  
 =================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw
