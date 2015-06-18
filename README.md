@@ -18,47 +18,47 @@ Output Features - MEAN and STANDARD DEVIATION variables
 After the run_analysis.R program is run, the features in the output file (Peer Assessment.txt) 
 are only those containing the MEAN and STANDARD DEVIATION, as described below. XYZ denote three different axis variables (X, Y and Z), so for each of these variables, there will be a total of 3 in the dataset. However, it's important to note that not all of these variables may be present in the output. The units (and meaning) of each variable are described down below, in the "Original Features" section. In brief, variables preceeded by 'f' correspond to FREQUENCY measurements, whereas those preceeded by 't' are TIME measurements:
 
-tBodyAcc-XYZ-mean
-tGravityAcc-XYZ-mean
-tBodyAccJerk-XYZ-mean
-tBodyGyro-XYZ-mean
-tBodyGyroJerk-XYZ-mean
-tBodyAccMag-mean
-tGravityAccMag-mean
-tBodyAccJerkMag-mean
-tBodyGyroMag-mean
-tBodyGyroJerkMag-mean
-fBodyAcc-XYZ-mean
-fBodyAccJerk-XYZ-mean
-fBodyGyro-XYZ-mean
-fBodyAccMag-mean
-fBodyAccJerkMag-mean
-fBodyGyroMag-mean
-fBodyGyroJerkMag-mean
+	tBodyAcc-XYZ-mean
+	tGravityAcc-XYZ-mean
+	tBodyAccJerk-XYZ-mean
+	tBodyGyro-XYZ-mean
+	tBodyGyroJerk-XYZ-mean
+	tBodyAccMag-mean
+	tGravityAccMag-mean
+	tBodyAccJerkMag-mean
+	tBodyGyroMag-mean
+	tBodyGyroJerkMag-mean
+	fBodyAcc-XYZ-mean
+	fBodyAccJerk-XYZ-mean
+	fBodyGyro-XYZ-mean
+	fBodyAccMag-mean
+	fBodyAccJerkMag-mean
+	fBodyGyroMag-mean
+	fBodyGyroJerkMag-mean
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+	gravityMean
+	tBodyAccMean
+	tBodyAccJerkMean
+	tBodyGyroMean
+	tBodyGyroJerkMean
 
-tBodyAcc-XYZ-std
-tGravityAcc-XYZ-std
-tBodyAccJerk-XYZ-std
-tBodyGyro-XYZ-std
-tBodyGyroJerk-XYZ-std
-tBodyAccMag-std
-tGravityAccMag-std
-tBodyAccJerkMag-std
-tBodyGyroMag-std
-tBodyGyroJerkMag-std
-fBodyAcc-XYZ-std
-fBodyAccJerk-XYZ-std
-fBodyGyro-XYZ-std
-fBodyAccMag-std
-fBodyAccJerkMag-std
-fBodyGyroMag-std
-fBodyGyroJerkMag-std
+	tBodyAcc-XYZ-std
+	tGravityAcc-XYZ-std
+	tBodyAccJerk-XYZ-std
+	tBodyGyro-XYZ-std
+	tBodyGyroJerk-XYZ-std
+	tBodyAccMag-std
+	tGravityAccMag-std
+	tBodyAccJerkMag-std
+	tBodyGyroMag-std
+	tBodyGyroJerkMag-std
+	fBodyAcc-XYZ-std
+	fBodyAccJerk-XYZ-std
+	fBodyGyro-XYZ-std
+	fBodyAccMag-std
+	fBodyAccJerkMag-std
+	fBodyGyroMag-std
+	fBodyGyroJerkMag-std
 
 Original Features  
 =================
@@ -82,50 +82,50 @@ indicate frequency domain signals).
 These signals were used to estimate variables of the feature vector for each pattern:   '-XYZ' is
 used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+	tBodyAcc-XYZ
+	tGravityAcc-XYZ
+	tBodyAccJerk-XYZ
+	tBodyGyro-XYZ
+	tBodyGyroJerk-XYZ
+	tBodyAccMag
+	tGravityAccMag
+	tBodyAccJerkMag
+	tBodyGyroMag
+	tBodyGyroJerkMag
+	fBodyAcc-XYZ
+	fBodyAccJerk-XYZ
+	fBodyGyro-XYZ
+	fBodyAccMag
+	fBodyAccJerkMag
+	fBodyGyroMag
+	fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+	mean(): Mean value
+	std(): Standard deviation
+	mad(): Median absolute deviation 
+	max(): Largest value in array
+	min(): Smallest value in array
+	sma(): Signal magnitude area
+	energy(): Energy measure. Sum of the squares divided by the number of values. 
+	iqr(): Interquartile range 
+	entropy(): Signal entropy
+	arCoeff(): Autorregresion coefficients with Burg order equal to 4
+	correlation(): correlation coefficient between two signals
+	maxInds(): index of the frequency component with largest magnitude
+	meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+	skewness(): skewness of the frequency domain signal 
+	kurtosis(): kurtosis of the frequency domain signal 
+	bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+	angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+	gravityMean
+	tBodyAccMean
+	tBodyAccJerkMean
+	tBodyGyroMean
+	tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
