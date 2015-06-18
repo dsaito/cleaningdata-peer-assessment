@@ -1,7 +1,14 @@
 General Information
 ===================
 
-The variables contained in the original data were obtained from the Human Activity Recognition Using Smartphones Dataset, as described in the "Original Features" section. These variables and values will be analyzed according to Coursera's Getting and Cleaning Data Peer Assessment, as decribed step by step in the README.txt file. In brief, after the run_analysis.R program is run, the 2 study groups (test and trainning) are joined into a single set, and only the variables containing the MEAN or STANDARD DEVIATION are kept. The final result is achieved by further taking the MEAN of every variable selected in the last step, according to subject and activity (walking, walking downstairs, walking upstairs, sitting, standing and laying).
+The variables contained in the original data were obtained from the Human Activity Recognition Using
+Smartphones Dataset, as described in the "Original Features" section. These variables and values
+will be analyzed according to Coursera's Getting and Cleaning Data Peer Assessment, as decribed step
+by step in the README.txt file. In brief, after the run_analysis.R program is run, the 2 study
+groups (test and trainning) are joined into a single set, and only the variables containing the MEAN
+or STANDARD DEVIATION are kept. The final result is achieved by further taking the MEAN of every
+variable selected in the last step, according to subject and activity (walking, walking downstairs,
+walking upstairs, sitting, standing and laying).
 
 Output Features - MEAN and STANDARD DEVIATION variables
 =======================================================
