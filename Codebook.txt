@@ -13,7 +13,8 @@ walking upstairs, sitting, standing and laying).
 Output Features - MEAN and STANDARD DEVIATION variables
 =======================================================
 
-After the run_analysis.R program is run, the features in the output file (Peer Assessment.txt) are only those containing the MEAN and STANDARD DEVIATION, as follows:
+After the run_analysis.R program is run, the features in the output file (Peer Assessment.txt) 
+are only those containing the MEAN and STANDARD DEVIATION, as follows:
 
 tBodyAcc-XYZ-mean
 tGravityAcc-XYZ-mean
